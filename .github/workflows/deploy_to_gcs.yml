@@ -68,5 +68,5 @@ jobs:
       - name: Update import map
         run: |
           curl -u ${{ secrets.DEPLOYER_USERNAME }}:${{ secrets.DEPLOYER_PASSWORD }} -X PATCH \
-               -d '{ "service":"@ssm/'"$REPOSITORY_NAME"'", "url":"https://storage.googleapis.com/${{ secrets.GCS_BUCKET_NAME }}/'"$REPOSITORY_NAME"'/'"$GITHUB_SHA"'/ssm-'"$REPOSITORY_NAME"'.js" }' \
+               -d '{ "service":"@ssm/'"$REPOSITORY_NAME"'", "url":"https://storage.googleapis.com/${{ secrets.GCS_BUCKET_NAME }}/'"$REPOSITORY_NAME"'/'"$GITHUB_SHA"'/main.js" }' \
                "http://${{ secrets.DEPLOYER_HOST }}/services?env=test"
