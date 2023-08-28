@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa:angular-legacy": "ng build angular-legacy --prod --deploy-url http://localhost:9002/",
-    "serve:single-spa:angular-legacy": "ng s --project angular-legacy --disable-host-check --port 4200 --deploy-url http://localhost:9002/ --live-reload false"
+    "serve:single-spa:angular-legacy": "ng s --project angular-legacy --disable-host-check --port 9002 --deploy-url http://localhost:9002/ --live-reload false"
   },
   "private": true,
   "dependencies": {
