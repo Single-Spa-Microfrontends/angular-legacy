@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --disable-host-check --port 9002 --deploy-url http://localhost:9002/",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
